@@ -5,21 +5,21 @@
 class ChargeoverCli < Formula
   desc "ChargeOver developer CLI for installing, managing, and orchestrating a developer environment."
   homepage "https://chargeover.com/"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.2/chargeover_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "faf1bd11d1e097c59287ce24ee4f91c5036f3da4edc4c1e98a21895d398beeb7"
+      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.3/chargeover_1.0.3_Darwin_arm64.tar.gz"
+      sha256 "b2ddd3779bd53b67e0e3495e414318828cfb9fb42f9bb318c5956af5ccea6944"
 
       def install
         bin.install "chargeover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.2/chargeover_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "83b57ccd93bd5fdc8e41113a612a2ef045a5123736f3ff860cefa7da9d4eb13d"
+      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.3/chargeover_1.0.3_Darwin_x86_64.tar.gz"
+      sha256 "4774ce051e077e1f0bf047253957ec6260ae98af2a9eb6698b6766e9307a82a5"
 
       def install
         bin.install "chargeover"
@@ -29,16 +29,16 @@ class ChargeoverCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.2/chargeover_1.0.2_Linux_arm64.tar.gz"
-      sha256 "0ce86aed8400c4617125e57f6063a3021f1c2676a5c29699d63775363758a159"
+      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.3/chargeover_1.0.3_Linux_arm64.tar.gz"
+      sha256 "4aa172cf255629c1c1dc4b632313712b19ea33bd37811f87fc573e9e03587283"
 
       def install
         bin.install "chargeover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.2/chargeover_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "553416dbacfb2fc78788f89ec58f361be477c62a542fbf6bcc71352b1e46e204"
+      url "https://github.com/chargeover/homebrew-chargeover-cli/releases/download/1.0.3/chargeover_1.0.3_Linux_x86_64.tar.gz"
+      sha256 "73496b5c08eace04c687d995f43c3e7299fa922c389edf32dec5c181d899f74a"
 
       def install
         bin.install "chargeover"
